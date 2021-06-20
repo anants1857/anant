@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Amazing Strange Rope Police Game Files - Crazy Games</title>
+    <link href="https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js" rel="preload" as="script" />
+    <link href="https://www.crazygames.com/game/amazing-strange-rope-police-vice-spider" rel="canonical" />
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="The game files for Amazing Strange Rope Police, a free browser game on CrazyGames.com" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Accept-CH" content="DPR" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" />
+    <style id="pacman-styles">
+        /* purple background */
+        body {
+            background-image: linear-gradient(290deg, #3b2b73 55%, #6f2f93, #6f2f93);
+            background-position: center;
+            text-align: center;
+        }
+
+        /* for positioning of pacman loader */
+        body,
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes rotate_preloadpacman_half_up {
+            0% {
+                transform: rotate(270deg);
+            }
+
+            50% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(270deg);
+            }
+        }
+
+        @keyframes rotate_preloadpacman_half_down {
+            0% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(90deg);
+            }
+        }
+
+        @keyframes preloadpacman-balls {
+            75% {
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translate(-100px, -6.25px);
+            }
+        }
+
+        .preloadpacman {
+            position: relative;
+        }
+
+        .preloadpacman>div:nth-child(2) {
+            animation: preloadpacman-balls 1s -0.99s infinite linear;
+        }
+
+        .preloadpacman>div:nth-child(3) {
+            animation: preloadpacman-balls 1s -0.66s infinite linear;
+        }
+
+        .preloadpacman>div:nth-child(4) {
+            animation: preloadpacman-balls 1s -0.33s infinite linear;
+        }
+
+        .preloadpacman>div:nth-child(5) {
+            animation: preloadpacman-balls 1s 0s infinite linear;
+        }
+
+        .preloadpacman>div:first-of-type {
+            width: 0px;
+            height: 0px;
+            border-right: 25px solid transparent;
+            border-top: 25px solid #fff;
+            border-left: 25px solid #fff;
+            border-bottom: 25px solid #fff;
+            border-radius: 25px;
+            animation: rotate_preloadpacman_half_up 0.5s 0s infinite;
+            position: relative;
+            left: -30px;
+        }
+
+        .preloadpacman>div:nth-child(2) {
+            width: 0px;
+            height: 0px;
+            border-right: 25px solid transparent;
+            border-top: 25px solid #fff;
+            border-left: 25px solid #fff;
+            border-bottom: 25px solid #fff;
+            border-radius: 25px;
+            animation: rotate_preloadpacman_half_down 0.5s 0s infinite;
+            margin-top: -50px;
+            position: relative;
+            left: -30px;
+        }
+
+        .preloadpacman>div:nth-child(3),
+        .preloadpacman>div:nth-child(4),
+        .preloadpacman>div:nth-child(5),
+        .preloadpacman>div:nth-child(6) {
+            background-color: #fff;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            margin: 2px;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            transform: translate(0, -6.25px);
+            top: 25px;
+            left: 70px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="preloadpacman" id="pacman">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script type="text/javascript">
+        function loadScript(url, async, callback) {
+            var head = document.head;
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = url;
+            if (async) {
+                script.async = true;
+            }
+            script.onreadystatechange = callback;
+            script.onload = callback;
+            head.appendChild(script);
+        }
+        var options = {
+            "loader": "5.6.x",
+            "loaderOptions": {
+                "moduleJsonUrl": "https://files.crazygames.com/amazing-strange-rope-police-vice-spider/1/spider/Build/spider.json",
+                "unityLoaderUrl": "https://files.crazygames.com/unityloaders/UnityLoader-v3.js"
+            },
+            "author": "HGames-ArtWorks",
+            "thumbnail": "https://images.crazygames.com/games/amazing-strange-rope-police-vice-spider/cover-1583259570029.png?auto=format,compress&q=75&cs=strip&w=360",
+            "gameName": "Amazing Strange Rope Police",
+            "gameHttps": true,
+            "gameSlug": "amazing-strange-rope-police-vice-spider",
+            "gameStatus": "published",
+            "showAdOnExternal": "ALWAYS",
+            "showAdOnInternal": "DEFAULT",
+            "appStoreLink": null,
+            "playStoreLink": "https://play.google.com/store/apps/details?id=com.hgamesart.ropeboy",
+            "steamStoreLink": null,
+            "disableEmbedding": false,
+            "dollarRate": 0.8428611765499164,
+            "upvotes": 317786,
+            "downvotes": 38632,
+            "releaseDate": "2018-12-03",
+            "locale": "en_US",
+            "controls": {
+                "mouse": {
+                    "left": {
+                        "en_US": "Shoot or punch"
+                    },
+                    "right": {
+                        "en_US": "Laser"
+                    }
+                },
+                "keyboard": [{
+                    "keys": ["WASD", "ARROWS"],
+                    "label": {
+                        "en_US": "Move"
+                    }
+                }, {
+                    "keys": ["SPACE"],
+                    "label": {
+                        "en_US": "Jump"
+                    }
+                }, {
+                    "keys": ["SHIFT"],
+                    "label": {
+                        "en_US": "Run"
+                    }
+                }, {
+                    "keys": ["T"],
+                    "label": {
+                        "en_US": "Open nearby garage"
+                    }
+                }, {
+                    "keys": ["Q"],
+                    "label": {
+                        "en_US": "Shoot web"
+                    }
+                }, {
+                    "keys": ["X"],
+                    "label": {
+                        "en_US": "Switch weapons"
+                    }
+                }, {
+                    "keys": ["F"],
+                    "label": {
+                        "en_US": "Open car"
+                    }
+                }, {
+                    "keys": ["R"],
+                    "label": {
+                        "en_US": "Open nearby shop"
+                    }
+                }, {
+                    "keys": ["G"],
+                    "label": {
+                        "en_US": "Grenade"
+                    }
+                }, {
+                    "keys": ["Z"],
+                    "label": {
+                        "en_US": "Switch grenade"
+                    }
+                }, {
+                    "keys": ["C"],
+                    "label": {
+                        "en_US": "Switch vehicle camera"
+                    }
+                }, {
+                    "keys": ["Z", "X"],
+                    "label": {
+                        "en_US": "Garbage truck: Pitchfork up / down"
+                    }
+                }, {
+                    "keys": ["Q", "E"],
+                    "label": {
+                        "en_US": "Garbage truck: Dump "
+                    }
+                }]
+            },
+            "videoThumbnail": "https://videos.crazygames.com/amazing-strange-rope-police-vice-spider/1/amazing-strange-rope-police-vice-spider-180x111.mp4",
+            "video": {
+                "original": "https://videos.crazygames.com/original-resolution/amazing-strange-rope-police-vice-spider-vegasb.mp4",
+                "sizes": [{
+                    "width": 180,
+                    "height": 111,
+                    "location": "https://videos.crazygames.com/amazing-strange-rope-police-vice-spider/1/amazing-strange-rope-police-vice-spider-180x111.mp4"
+                }, {
+                    "width": 360,
+                    "height": 222,
+                    "location": "https://videos.crazygames.com/amazing-strange-rope-police-vice-spider/1/amazing-strange-rope-police-vice-spider-360x222.mp4"
+                }, {
+                    "width": 540,
+                    "height": 333,
+                    "location": "https://videos.crazygames.com/amazing-strange-rope-police-vice-spider/1/amazing-strange-rope-police-vice-spider-540x333.mp4"
+                }, {
+                    "width": 720,
+                    "height": 444,
+                    "location": "https://videos.crazygames.com/amazing-strange-rope-police-vice-spider/1/amazing-strange-rope-police-vice-spider-720x444.mp4"
+                }]
+            },
+            "totalSize": "71 MB",
+            "minTimeBetweenMidrollAdsInMs": 180000,
+            "minTimeBetweenRewardedAdsInMs": 5000,
+            "noMidrollAdInFirstMinutes": 3,
+            "noRewardedAdInFirstMinutes": 0,
+            "categoryEnSlug": "action",
+            "tagsEnSlugs": ["3d", "webgl", "1-player", "destroy", "hero", "gun", "weapon"],
+            "fullscreen": "ADDS_VALUE",
+            "orientation": null,
+            "category": "Spiderman",
+            "categoryLink": "https://www.crazygames.com/t/spiderman",
+            "gameLink": "https://www.crazygames.com/game/amazing-strange-rope-police-vice-spider",
+            "alternativeGames": [{
+                "category": "Action",
+                "gameSlug": "super-crime-steel-war-hero",
+                "gameName": "Super Crime Steel War Hero",
+                "rating": 9.1,
+                "thumbnail": "https://images.crazygames.com/super-crime-steel-war-hero-iron-flying-mech-robot.png?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/super-crime-steel-war-hero-iron-flying-mech-robot.mp4",
+                "gameLink": "https://www.crazygames.com/game/super-crime-steel-war-hero",
+                "loader": "5.6.x"
+            }, {
+                "category": "Action",
+                "gameSlug": "amazing-crime-strange-stickman",
+                "gameName": "Amazing Crime Strange Stickman",
+                "rating": 9.1,
+                "thumbnail": "https://images.crazygames.com/amazing-crime-strange-stickman-rope-vice-vegas.png?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/amazing-crime-strange-stickman/1/amazing-crime-strange-stickman-180x111.mp4",
+                "gameLink": "https://www.crazygames.com/game/amazing-crime-strange-stickman",
+                "loader": "5.6.x"
+            }, {
+                "category": "Action",
+                "gameSlug": "creepy-granny-scream-scary-freddy",
+                "gameName": "Creepy Granny Scream: Scary Freddy",
+                "rating": 8.7,
+                "thumbnail": "https://images.crazygames.com/creepy-granny-scream-scary-freddy-horror-game.png?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/creepy-granny-scream-scary-freddy/1/creepy-granny-scream-scary-freddy-180x111.mp4",
+                "gameLink": "https://www.crazygames.com/game/creepy-granny-scream-scary-freddy",
+                "loader": "5.6.x"
+            }, {
+                "category": "Action",
+                "gameSlug": "grand-action-simulator-new-york-car-gang",
+                "gameName": "Grand Action Simulator: New York Car Gang",
+                "rating": 9,
+                "thumbnail": "https://images.crazygames.com/grandactionsimulatornewyorkcargang.png?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/grand-action-simulator-new-york-car-gang.mp4",
+                "gameLink": "https://www.crazygames.com/game/grand-action-simulator-new-york-car-gang",
+                "loader": "5.6.x"
+            }, {
+                "category": ".io",
+                "gameSlug": "shellshockersio",
+                "gameName": "Shell Shockers",
+                "rating": 9.2,
+                "thumbnail": "https://images.crazygames.com/shellshockersio/20200825110135/shellshockersio-cover?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/shellshockersio/2/shellshockersio-180x111.mp4",
+                "gameLink": "https://www.crazygames.com/game/shellshockersio",
+                "loader": "iframe"
+            }, {
+                "category": "Shooting",
+                "gameSlug": "bullet-force-multiplayer",
+                "gameName": "Bullet Force",
+                "rating": 9.1,
+                "thumbnail": "https://images.crazygames.com/games/bullet-force-multiplayer/cover-1588010858655.png?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/bullet-force-multiplayer/8/bullet-force-multiplayer-180x111.mp4",
+                "gameLink": "https://www.crazygames.com/game/bullet-force-multiplayer",
+                "loader": "5.6.x"
+            }, {
+                "category": ".io",
+                "gameSlug": "krunker-io",
+                "gameName": "Krunker",
+                "rating": 9.1,
+                "thumbnail": "https://images.crazygames.com/games/krunker-io/cover-1591336739727.png?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/krunker-io/3/krunker-io-180x111.mp4",
+                "gameLink": "https://www.crazygames.com/game/krunker-io",
+                "loader": "iframe"
+            }, {
+                "category": "Action",
+                "gameSlug": "project-grand-auto-town",
+                "gameName": "Project Grand Auto Town",
+                "rating": 8.9,
+                "thumbnail": "https://images.crazygames.com/project-grand-auto-town.png?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/project-grand-auto-town.mp4",
+                "gameLink": "https://www.crazygames.com/game/project-grand-auto-town",
+                "loader": "5.4.x"
+            }, {
+                "category": "Arcade",
+                "gameSlug": "crazy-roll-3d",
+                "gameName": "Crazy Roll 3D",
+                "rating": 9.2,
+                "thumbnail": "https://images.crazygames.com/games/crazy-roll-3d/thumb-1551212403077.png?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/crazy-roll-3d/2/crazy-roll-3d-180x111.mp4",
+                "gameLink": "https://www.crazygames.com/game/crazy-roll-3d",
+                "loader": "5.6.x"
+            }, {
+                "category": "Shooting",
+                "gameSlug": "stickman-zombie-3d",
+                "gameName": "Stickman Zombie 3D",
+                "rating": 9.2,
+                "thumbnail": "https://images.crazygames.com/stickman-zombie-3d-cover?auto=format,compress&q=75&cs=strip&w=360",
+                "videoThumbnail": "https://videos.crazygames.com/stickman-zombie-3d/1/stickman-zombie-3d-thumbnail.mp4",
+                "gameLink": "https://www.crazygames.com/game/stickman-zombie-3d",
+                "loader": "5.6.x"
+            }],
+            "country": "VN",
+            "domainHasNoCMP": false
+        };
+        var SDK_READY = false;
+        var GF_READY = false;
+        var GF_LOAD_CALLED = false;
+        loadScript("https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js", true, function() {
+            Crazygames.load(options).then(function() {
+                var pacmanWrapper = document.getElementById('pacman');
+                var pacmanStyles = document.getElementById('pacman-styles');
+
+                if (pacmanWrapper && pacmanStyles) {
+                    pacmanWrapper.remove();
+                    pacmanStyles.remove();
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
